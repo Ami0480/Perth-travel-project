@@ -1,7 +1,67 @@
-h1 {
+body {
   font-family: "poppins";
-  font-style: normal;
-  font-weight: 700;
+  background-color: black;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)),
+    url("../images/perthcity.jpg");
+  background-size: cover;
+  background-repeat: none;
+  color: white;
+  text-align: center;
+  padding: 200px;
+}
+header h1 {
   font-size: 96px;
-  line-height: 144px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+}
+header h2 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+header h3 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  margin: 0;
+}
+header a {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: white;
+  padding: 16px 32px;
+  color: #272044;
+  text-decoration: none;
+  margin: 32px;
+  display: inline-block;
+}
+
+@media (max-width: 800px) {
+  header {
+    padding: 60px 0;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+  header h3 {
+    font-size: 12px;
+  }
 }
