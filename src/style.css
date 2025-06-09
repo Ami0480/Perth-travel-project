@@ -1,6 +1,7 @@
 body {
   font-family: "poppins";
   background-color: black;
+  color: #272044;
 }
 
 .container {
@@ -17,9 +18,37 @@ header {
   text-align: center;
   padding: 200px 0;
 }
+main {
+  background-color: white;
+}
+.img-responsive {
+  max-width: 100%;
+}
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+}
+main p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 70%;
+}
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
+}
+img {
+  max-width: 100%;
 }
 header h1 {
   font-size: 96px;
@@ -60,13 +89,20 @@ footer {
     url("../images/footerimage.jpg");
   background-repeat: none;
   background-size: cover;
-  padding: 100px 0;
 }
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
+
   grid-gap: 64px;
 }
+
+.grid-2-columns {
+  grid-template-columns: auto auto;
+}
+.grid-3-columns {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
 footer p {
   font-weight: 400;
   font-size: 16px;
@@ -98,5 +134,12 @@ footer a {
   }
   header h3 {
     font-size: 12px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px 0;
+  }
+  section {
+    padding: 30px;
   }
 }
